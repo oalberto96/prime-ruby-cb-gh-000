@@ -4,5 +4,5 @@ def prime?(number)
     return false
   end
   range = (2..number).to_a
-  puts !range.any? {|e| (e % number == 0) && e != number  }
+  !range.any? {|e| (e % number == 0) && e != number  }
 end
